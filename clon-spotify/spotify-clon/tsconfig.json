@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": "C:/Users/idmr_/OneDrive/Escritorio/clon-spotify/spotify-clon",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@/components/*": [
+        "/components/*"
+      ],
+      "@/icons/*": [
+        "/icons/*"
+      ],
+      "@/lib/*": [
+        "/lib/*"
+      ]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  },
+  "extends": "astro/tsconfigs/strict"
+}
