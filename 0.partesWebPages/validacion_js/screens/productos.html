@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/47427cc084.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/productos.css">
+    <title>Alura Geek - Productos</title>
+</head>
+<body>
+    <header class="encabezado">
+        <div class="encabezado__logo">
+            <i class="encabezado__logo--pc fa-solid fa-desktop"></i>
+            <p class="encabezado__texto">Alura <span class="encabezado__span">Geek</span></p>
+        </div>
+        
+        <div class="encabezado__busqueda">
+            <input class="encabezado__busqueda--input" type="text" placeholder="¿Qué desea buscar?"><i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </header>
+
+    <section class="producto_anadir">
+            <form action="" class="formulario_añadir" data-form>
+                <input 
+                    class ="input__footer"
+                    type="text"
+                    name="task"
+                    placeholder="Nombre del producto"
+                    class="inputForm"
+                    autocomplete="off"
+                    data-nombre>
+
+                <input 
+                    class ="input__footer"
+                    type="number"
+                    name="task"
+                    placeholder="Precio del producto"
+                    class="inputForm"
+                    autocomplete="off"
+                    data-precio>
+
+                <input 
+                    class ="input__footer"
+                    type="text"
+                    name="task"
+                    placeholder="Imagen del producto"
+                    class="inputForm"
+                    autocomplete="off"
+                    data-url>
+                
+                <button type="submit" class="boton" data-form-btn>Agregar un producto</button>
+
+            </form>
+
+    </section>
+
+    <section data-list></section>
+
+
+    <footer>
+            <div class="footer__container">
+                <div class="footer__body">
+            
+                    <div class="logo__container">
+                        <i class="footer__logo--pc fa-solid fa-desktop"></i>
+                        <p class="footer__texto">Alura <span class="footer__span">Geek</span></p>
+                    </div>
+        
+                    <div>
+                        <p>Quienes somos</p>
+                        <p>Política de privacidad</p>
+                        <p>Programa de fidelidad</p>
+                        <p>Nuestras tiendas</p>
+                        <p>Quiero ser franquiciado</p>
+                        <p>Anúncie aquí</p>
+                    </div>
+                </div>
+        
+                <form class="footer__contacto" action="">
+                    <h3>Hable con nosotros</h3>
+                    <input class="input__footer" type="text" placeholder="Nombre">
+                    <textarea class="textarea__footer" name="" id="" cols="30" rows="10"  placeholder="Escribe tu mensaje"></textarea>
+                    <button class="footer__boton boton">Enviar mensaje</button> <br> <br>
+                </form>
+            </div>
+
+            <div class="footer__agradecimientos">
+                <hr>
+                <p>Desarrollado por Ivan Manrique <br> 2023</p>
+            </div>
+    </footer>      
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+    <script type="module" src="../js/prod-controller.js"></script>
+    
+    
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+
+body{
+    display: grid;
+    place-content: center;
+    min-height: 50vh;
+}
+
+section{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+section:hover .pulser{
+    opacity: 1;
+}
+.pulser{
+    width: 50px;
+    height: 50px;
+    background: #09f;
+    border-radius: 50%;
+    position: relative;
+    transition: all 2s ease;
+    opacity: 0;
+}
+
+.pulser:hover{
+    scale: 2;
+    background: red;
+    box-shadow: 0 0 10px red;
+    transition-duration:1s;
+}
+
+.pulser:first-child{
+    transition-delay: 0s;
+}
+
+.pulser:nth-child(2){
+    transition-delay: 300ms;
+}
+
+.pulser:nth-child(3){
+    transition-delay: 600ms;
+}
